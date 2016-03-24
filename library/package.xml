@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Protobuf</name>
+ <channel>__uri</channel>
+ <summary>PHP implementation of Google's Protocol Buffers</summary>
+ <description>
+Protobuf for PHP is an implementation of Google's Protocol Buffers for the
+PHP language, supporting its binary data serialization and including a
+protoc plugin to generate PHP classes from .proto files.
+ </description>
+ <lead>
+  <name>Iván -DrSlump- Montes</name>
+  <user>drslump</user>
+  <email>drslump@pollinimini.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2016-03-24</date>
+ <time>00:00:00</time>
+ <version>
+     <release>1.0.0</release>
+     <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/MIT">The MIT License</license>
+ <notes>http://github.com/drslump/Protobuf-PHP</notes>
+ <contents>
+     <dir name="/">
+         <file baseinstalldir="/" name="protoc-gen-php.php" role="script">
+             <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config"/>
+             <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+             <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file baseinstalldir="/" name="protoc-gen-php.bat" role="script">
+             <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+             <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+             <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Binary/Reader.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Binary/Unknown.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Binary/Writer.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/PhpArray/Unknown.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Binary.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Json.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/JsonIndexed.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/JsonTagMap.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/PhpArray.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/TextFormat.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Codec/Xml.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/descriptor.pb.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/descriptor.proto" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/json.pb.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/json.proto" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/php.pb.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/php.proto" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/plugin.pb.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/protos/plugin.proto" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/AbstractGenerator.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/Cli.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/CommentsParser.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/JsonGenerator.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Compiler/PhpGenerator.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/AnnotatedMessage.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/CodecInterface.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Descriptor.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Enum.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Exception.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Field.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Message.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Registry.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+         <file name="DrSlump/Protobuf/Unknown.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
+    </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.9.2</min>
+   </pearinstaller>
+   <package>
+    <name>Console_CommandLine</name>
+    <channel>pear.php.net</channel>
+    <min>1.1.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <installconditions>
+   <os>
+    <name>windows</name>
+   </os>
+  </installconditions>
+  <filelist>
+   <install as="protoc-gen-php" name="protoc-gen-php.php" />
+   <install as="protoc-gen-php.bat" name="protoc-gen-php.bat" />
+  </filelist>
+ </phprelease>
+ <phprelease>
+  <filelist>
+   <install as="protoc-gen-php" name="protoc-gen-php.php" />
+   <ignore name="protoc-gen-php.bat" />
+  </filelist>
+ </phprelease>
+</package>
