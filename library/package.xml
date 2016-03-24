@@ -77,6 +77,9 @@ protoc plugin to generate PHP classes from .proto files.
          <file name="DrSlump/Protobuf/Codec/Xml.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
+         <file name="DrSlump/Protobuf/Compiler.php" role="php">
+            <tasks:replace from="@package_version@" to="version" type="package-info" />
+         </file>
          <file name="DrSlump/Protobuf/Compiler/protos/descriptor.pb.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
