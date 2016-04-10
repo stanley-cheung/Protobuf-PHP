@@ -5,7 +5,7 @@
 
 namespace tests\Repeated {
 
-  class Nested extends \DrSlump\Protobuf\Message {
+  class Nested extends \Simplesurance\Protobuf\Message {
 
     /**  @var int */
     public $id = null;
@@ -16,14 +16,14 @@ namespace tests\Repeated {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Repeated.Nested');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Repeated.Nested');
 
       // OPTIONAL INT32 id = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "id";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -74,7 +74,7 @@ namespace tests\Repeated {
 
 namespace tests {
 
-  class Repeated extends \DrSlump\Protobuf\Message {
+  class Repeated extends \Simplesurance\Protobuf\Message {
 
     /**  @var string[]  */
     public $string = array();
@@ -91,30 +91,30 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Repeated');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Repeated');
 
       // REPEATED STRING string = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "string";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED INT32 int = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "int";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE nested = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "nested";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\tests\Repeated\Nested';
       $descriptor->addField($f);
 

@@ -1,15 +1,20 @@
 {
-    "name": "datto/protobuf-php",
+    "name": "simplesurance/protobuf-php",
     "description": "PHP implementation of Google's Protocol Buffers",
     "keywords": ["protobuf", "protocol buffer", "serializing"],
-    "homepage": "https://github.com/datto/Protobuf-PHP",
+    "homepage": "https://github.com/simplesurance/Protobuf-PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Iván -DrSlump- Montes",
+            "name": "Iván -Simplesurance- Montes",
             "email": "drslump@pollinimini.net",
-            "homepage": "https://github.com/drslump/Protobuf-PHP"
+            "homepage": "https://github.com/Simplesurance/Protobuf-PHP"
+        },
+        {
+            "name": "Çağatay Yüksel",
+            "email": "cagatay@cagatay.co.uk",
+            "homepage": "https://github.com/cagatay"
         }
     ],
     "bin": ["protoc-gen-php.bat", "protoc-gen-php.php"],
@@ -17,7 +22,7 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "psr-0": {"DrSlump": "library/"}
+        "psr-0": {"Simplesurance": "library/"}
     },
     "extra": {
         "branch-alias": {

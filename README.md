@@ -10,7 +10,7 @@ hints to aide IDE's with autocompletion. Therefore, it can not only be used to
 communicate with Protocol Buffers services but also as a generation tool for 
 _data objects_ no matter what the final serialization is.
 
-For more information see the [included man pages](http://drslump.github.com/Protobuf-PHP/).
+For more information see the [included man pages](http://simplesurance.github.com/Protobuf-PHP/).
 
 
 ## Requirements
@@ -59,11 +59,11 @@ For more information see the [included man pages](http://drslump.github.com/Prot
 
 ```php
 <?php
-require_once 'DrSlump/Protobuf.php';
-\DrSlump\Protobuf::autoload();
+require_once 'Simplesurance/Protobuf.php';
+\Simplesurance\Protobuf::autoload();
 
 $person = new Tutorial\Person();
-$person->name = 'DrSlump';
+$person->name = 'Simplesurance';
 $person->setId(12);
 
 $book = new Tutorial\AddressBook();
@@ -73,7 +73,7 @@ $book->addPerson($person);
 $data = $book->serialize();
 
 // Use custom codec
-$codec = new \DrSlump\Protobuf\Codec\Binary();
+$codec = new \Simplesurance\Protobuf\Codec\Binary();
 $data = $codec->encode($book);
 // ... or ...
 $data = $book->serialize($codec);
@@ -84,7 +84,7 @@ $data = $book->serialize($codec);
 Install with Pear
 
     pear channel-discover pear.pollinimini.net
-    pear install drslump/Protobuf-beta
+    pear install Simplesurance/Protobuf-beta
 
 You can also get the latest version by checking out a copy of the
 repository in your computer.
@@ -160,7 +160,7 @@ To make use of non-standard options in your proto files (like `php.namespace`) y
 have to import the `php.proto` file included with the library. It's location will 
 depend on where you've installed this library.
 
-    protoc -I=./Protobuf-PHP/library/DrSlump/Protobuf/Compiler/protos \
+    protoc -I=./Protobuf-PHP/library/Simplesurance/Protobuf/Compiler/protos \
            --plugin=protoc-gen-php --php_out=./build tutorial.proto
 
 In order to make your life easier, the supplied protoc plugin offers an additional
@@ -174,7 +174,7 @@ automatically include the `php.proto` path so that you don't need to worry about
 
     The MIT License
 
-    Copyright (c) 2011 Iván -DrSlump- Montes
+    Copyright (c) 2011 Iván -Simplesurance- Montes
 
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the

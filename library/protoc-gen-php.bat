@@ -1,6 +1,6 @@
 @echo off
 REM  Protobuf-PHP
-REM  Copyright (C) 2011 Iván -DrSlump- Montes <drslump@pollinimini.net>
+REM  Copyright (C) 2011 Iván -Simplesurance- Montes <Simplesurance@pollinimini.net>
 REM
 REM  This source file is subject to the MIT license that is bundled
 REM  with this package in the file LICENSE.

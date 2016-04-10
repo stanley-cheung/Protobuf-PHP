@@ -5,7 +5,7 @@
 
 namespace tests\Complex {
 
-  class Enum extends \DrSlump\Protobuf\Enum {
+  class Enum extends \Simplesurance\Protobuf\Enum {
     const FOO = 1;
     const BAR = 2;
     const BAZ = 10;
@@ -13,7 +13,7 @@ namespace tests\Complex {
 }
 namespace tests\Complex {
 
-  class Nested extends \DrSlump\Protobuf\Message {
+  class Nested extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $foo = null;
@@ -24,14 +24,14 @@ namespace tests\Complex {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Complex.Nested');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Complex.Nested');
 
       // OPTIONAL STRING foo = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "foo";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -82,7 +82,7 @@ namespace tests\Complex {
 
 namespace tests {
 
-  class Complex extends \DrSlump\Protobuf\Message {
+  class Complex extends \Simplesurance\Protobuf\Message {
 
     /**  @var int - \tests\Complex\Enum */
     public $enum = null;
@@ -96,23 +96,23 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Complex');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Complex');
 
       // OPTIONAL ENUM enum = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "enum";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\tests\Complex\Enum';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE nested = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "nested";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\tests\Complex\Nested';
       $descriptor->addField($f);
 

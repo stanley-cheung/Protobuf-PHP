@@ -5,7 +5,7 @@
 
 namespace tests\Person {
 
-  class PhoneType extends \DrSlump\Protobuf\Enum {
+  class PhoneType extends \Simplesurance\Protobuf\Enum {
     const MOBILE = 0;
     const HOME = 1;
     const WORK = 2;
@@ -13,7 +13,7 @@ namespace tests\Person {
 }
 namespace tests\Person {
 
-  class PhoneNumber extends \DrSlump\Protobuf\Message {
+  class PhoneNumber extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $number = null;
@@ -27,22 +27,22 @@ namespace tests\Person {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Person.PhoneNumber');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Person.PhoneNumber');
 
       // REQUIRED STRING number = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "number";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_REQUIRED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL ENUM type = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "type";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\tests\Person\PhoneType';
       $f->default   = \tests\Person\PhoneType::HOME;
       $descriptor->addField($f);
@@ -132,7 +132,7 @@ namespace tests\Person {
 
 namespace tests {
 
-  class Person extends \DrSlump\Protobuf\Message {
+  class Person extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -152,38 +152,38 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Person');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Person');
 
       // REQUIRED STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_REQUIRED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 id = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "id";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_REQUIRED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING email = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "email";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE phone = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "phone";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\tests\Person\PhoneNumber';
       $descriptor->addField($f);
 
@@ -366,7 +366,7 @@ namespace tests {
 
 namespace tests {
 
-  class AddressBook extends \DrSlump\Protobuf\Message {
+  class AddressBook extends \Simplesurance\Protobuf\Message {
 
     /**  @var \tests\Person[]  */
     public $person = array();
@@ -377,14 +377,14 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.AddressBook');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.AddressBook');
 
       // REPEATED MESSAGE person = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "person";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\tests\Person';
       $descriptor->addField($f);
 

@@ -4,9 +4,9 @@ protobuf-php(3) -- The framework
 ## SYNOPSIS
 
     <?php
-    require_once 'DrSlump\Protobuf.php';
+    require_once 'Simplesurance\Protobuf.php';
 
-    use DrSlump\Protobuf;
+    use Simplesurance\Protobuf;
 
     $data = file_get_contents('data.pb');
     $person = new Tutorial\Person($data);
@@ -59,7 +59,7 @@ with JavaScript in the browser or with third party REST web services.
 
 ### ProtoJson
 
-[ProtoJson](https://github.com/drslump/ProtoJson) allows to apply some payload
+[ProtoJson](https://github.com/Simplesurance/ProtoJson) allows to apply some payload
 minification strategies when working with JSON formatted messages. Taking advantatge
 of Protobuf's property names mapping to a integer number, it offers two encoding
 variants (_TagMap_ and _Indexed_) that use that number instead of the field name
@@ -85,7 +85,7 @@ An easy way to define messages directly in your code is to use the `Protobuf\Ann
 abstract class, which allows to annotate your classes so that the _codecs_ know how
 to parse and serialize those messages.
 
-    class Person extends \DrSlump\Protobuf\AnnotatedMessage {
+    class Person extends \Simplesurance\Protobuf\AnnotatedMessage {
         /** @protobuf(tag=1, type=string, required) */
         public $name;
         /** @protobuf(tag=2, type=int32, required) */
@@ -103,15 +103,15 @@ to parse and serialize those messages.
 
 ## BUGS
 
-Please report bugs using GitHub's issue tracker at http://github.com/drslump/protobuf-php/issues
+Please report bugs using GitHub's issue tracker at http://github.com/Simplesurance/protobuf-php/issues
 
 
 ## COPYRIGHT
 
-Protobuf for PHP is Copyright (C) 2011 Ivan -DrSlump- Montes <http://pollinimini.net>
+Protobuf for PHP is Copyright (C) 2011 Ivan -Simplesurance- Montes <http://pollinimini.net>
 
 
 ## SEE ALSO
 
 protoc-gen-php(1), protobuf-php(5),
-<http://github.com/drslump/protobuf-php>
+<http://github.com/Simplesurance/protobuf-php>

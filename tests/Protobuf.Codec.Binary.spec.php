@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../library/DrSlump/Protobuf.php';
+require_once __DIR__ . '/../library/Simplesurance/Protobuf.php';
 
 error_reporting(E_ALL);
 
-use \DrSlump\Protobuf;
+use \Simplesurance\Protobuf;
 
 Protobuf::autoload();
 
@@ -188,7 +188,7 @@ describe "Binary Codec"
             $person = new Tests\Person();
             $person->name = 'Iván Montes';
             $person->id = 23;
-            $person->email = 'drslump@pollinimini.net';
+            $person->email = 'Simplesurance@pollinimini.net';
             $phone = new Tests\Person\PhoneNumber;
             $phone->number = '3493123123';
             $phone->type = Tests\Person\PhoneType::WORK;

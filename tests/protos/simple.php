@@ -5,7 +5,7 @@
 
 namespace tests {
 
-  class Simple extends \DrSlump\Protobuf\Message {
+  class Simple extends \Simplesurance\Protobuf\Message {
 
     /**  @var float */
     public $double = null;
@@ -58,126 +58,126 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.Simple');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.Simple');
 
       // OPTIONAL DOUBLE double = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "double";
-      $f->type      = \DrSlump\Protobuf::TYPE_DOUBLE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_DOUBLE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT float = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "float";
-      $f->type      = \DrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_FLOAT;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT64 int64 = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "int64";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL UINT64 uint64 = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "uint64";
-      $f->type      = \DrSlump\Protobuf::TYPE_UINT64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_UINT64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 int32 = 5
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 5;
       $f->name      = "int32";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FIXED64 fixed64 = 6
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 6;
       $f->name      = "fixed64";
-      $f->type      = \DrSlump\Protobuf::TYPE_FIXED64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_FIXED64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FIXED32 fixed32 = 7
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 7;
       $f->name      = "fixed32";
-      $f->type      = \DrSlump\Protobuf::TYPE_FIXED32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_FIXED32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL bool = 8
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 8;
       $f->name      = "bool";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING string = 9
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 9;
       $f->name      = "string";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BYTES bytes = 12
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 12;
       $f->name      = "bytes";
-      $f->type      = \DrSlump\Protobuf::TYPE_BYTES;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BYTES;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL UINT32 uint32 = 13
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 13;
       $f->name      = "uint32";
-      $f->type      = \DrSlump\Protobuf::TYPE_UINT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_UINT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL SFIXED32 sfixed32 = 15
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 15;
       $f->name      = "sfixed32";
-      $f->type      = \DrSlump\Protobuf::TYPE_SFIXED32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_SFIXED32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL SFIXED64 sfixed64 = 16
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 16;
       $f->name      = "sfixed64";
-      $f->type      = \DrSlump\Protobuf::TYPE_SFIXED64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_SFIXED64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL SINT32 sint32 = 17
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 17;
       $f->name      = "sint32";
-      $f->type      = \DrSlump\Protobuf::TYPE_SINT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_SINT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL SINT64 sint64 = 18
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 18;
       $f->name      = "sint64";
-      $f->type      = \DrSlump\Protobuf::TYPE_SINT64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_SINT64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {

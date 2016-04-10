@@ -2,7 +2,7 @@
 <?php
 // The MIT License
 //
-// Copyright (c) 2011 Iván -DrSlump- Montes
+// Copyright (c) 2011 Iván -Simplesurance- Montes
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -33,14 +33,14 @@ if (strpos('@php_bin@', '@php_bin') === 0) {
 // Disable strict errors for the compiler
 error_reporting(error_reporting() & ~E_STRICT);
 
-require_once 'DrSlump/Protobuf.php';
+require_once 'Simplesurance/Protobuf.php';
 
 // Setup autoloader
-\DrSlump\Protobuf::autoload();
+\Simplesurance\Protobuf::autoload();
 
 try {
     // Run the cli interface
-    \DrSlump\Protobuf\Compiler\Cli::run(__FILE__);
+    \Simplesurance\Protobuf\Compiler\Cli::run(__FILE__);
     exit(0);
 
 } catch(Exception $e) {

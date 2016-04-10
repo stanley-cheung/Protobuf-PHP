@@ -45,15 +45,15 @@ that affect the generated source code.
 
 ## BUGS ##
 
-Please report bugs using GitHub's issue tracker at http://github.com/drslump/protobuf-php/issues
+Please report bugs using GitHub's issue tracker at http://github.com/Simplesurance/protobuf-php/issues
 
 
 ## COPYRIGHT ##
 
-Protobuf for PHP is Copyright (C) 2011 Ivan -DrSlump- Montes <http://pollinimini.net>
+Protobuf for PHP is Copyright (C) 2011 Ivan -Simplesurance- Montes <http://pollinimini.net>
 
 
 ## SEE ALSO
 
 protoc-gen-php(1), protobuf-php(3),
-<http://github.com/drslump/protobuf-php>
+<http://github.com/Simplesurance/protobuf-php>

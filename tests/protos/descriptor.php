@@ -5,7 +5,7 @@
 
 namespace google\protobuf {
 
-  class FileDescriptorSet extends \DrSlump\Protobuf\Message {
+  class FileDescriptorSet extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\FileDescriptorProto[]  */
     public $file = array();
@@ -16,14 +16,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorSet');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorSet');
 
       // REPEATED MESSAGE file = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "file";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FileDescriptorProto';
       $descriptor->addField($f);
 
@@ -95,7 +95,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class FileDescriptorProto extends \DrSlump\Protobuf\Message {
+  class FileDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -130,83 +130,83 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING package = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "package";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED STRING dependency = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "dependency";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE message_type = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "message_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE enum_type = 5
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 5;
       $f->name      = "enum_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE service = 6
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 6;
       $f->name      = "service";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\ServiceDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension = 7
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 7;
       $f->name      = "extension";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 8
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 8;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FileOptions';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE source_code_info = 9
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 9;
       $f->name      = "source_code_info";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\SourceCodeInfo';
       $descriptor->addField($f);
 
@@ -654,7 +654,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\DescriptorProto {
 
-  class ExtensionRange extends \DrSlump\Protobuf\Message {
+  class ExtensionRange extends \Simplesurance\Protobuf\Message {
 
     /**  @var int */
     public $start = null;
@@ -668,22 +668,22 @@ namespace google\protobuf\DescriptorProto {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto.ExtensionRange');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto.ExtensionRange');
 
       // OPTIONAL INT32 start = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "start";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 end = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "end";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -771,7 +771,7 @@ namespace google\protobuf\DescriptorProto {
 
 namespace google\protobuf {
 
-  class DescriptorProto extends \DrSlump\Protobuf\Message {
+  class DescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -800,67 +800,67 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE field = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "field";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension = 6
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 6;
       $f->name      = "extension";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE nested_type = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "nested_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE enum_type = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "enum_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension_range = 5
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 5;
       $f->name      = "extension_range";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto\ExtensionRange';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 7
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 7;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\MessageOptions';
       $descriptor->addField($f);
 
@@ -1234,7 +1234,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FieldDescriptorProto {
 
-  class Type extends \DrSlump\Protobuf\Enum {
+  class Type extends \Simplesurance\Protobuf\Enum {
     const TYPE_DOUBLE = 1;
     const TYPE_FLOAT = 2;
     const TYPE_INT64 = 3;
@@ -1257,7 +1257,7 @@ namespace google\protobuf\FieldDescriptorProto {
 }
 namespace google\protobuf\FieldDescriptorProto {
 
-  class Label extends \DrSlump\Protobuf\Enum {
+  class Label extends \Simplesurance\Protobuf\Enum {
     const LABEL_OPTIONAL = 1;
     const LABEL_REQUIRED = 2;
     const LABEL_REPEATED = 3;
@@ -1265,7 +1265,7 @@ namespace google\protobuf\FieldDescriptorProto {
 }
 namespace google\protobuf {
 
-  class FieldDescriptorProto extends \DrSlump\Protobuf\Message {
+  class FieldDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -1297,72 +1297,72 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 number = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "number";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL ENUM label = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "label";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldDescriptorProto\Label';
       $descriptor->addField($f);
 
       // OPTIONAL ENUM type = 5
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 5;
       $f->name      = "type";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldDescriptorProto\Type';
       $descriptor->addField($f);
 
       // OPTIONAL STRING type_name = 6
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 6;
       $f->name      = "type_name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING extendee = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "extendee";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING default_value = 7
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 7;
       $f->name      = "default_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 8
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 8;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldOptions';
       $descriptor->addField($f);
 
@@ -1673,7 +1673,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumDescriptorProto extends \DrSlump\Protobuf\Message {
+  class EnumDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -1690,31 +1690,31 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE value = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "value";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumValueDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\EnumOptions';
       $descriptor->addField($f);
 
@@ -1860,7 +1860,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumValueDescriptorProto extends \DrSlump\Protobuf\Message {
+  class EnumValueDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -1877,30 +1877,30 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 number = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "number";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\EnumValueOptions';
       $descriptor->addField($f);
 
@@ -2026,7 +2026,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class ServiceDescriptorProto extends \DrSlump\Protobuf\Message {
+  class ServiceDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -2043,31 +2043,31 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE method = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "method";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\MethodDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\ServiceOptions';
       $descriptor->addField($f);
 
@@ -2213,7 +2213,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MethodDescriptorProto extends \DrSlump\Protobuf\Message {
+  class MethodDescriptorProto extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name = null;
@@ -2233,38 +2233,38 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodDescriptorProto');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING input_type = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "input_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING output_type = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "output_type";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "options";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\MethodOptions';
       $descriptor->addField($f);
 
@@ -2427,7 +2427,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FileOptions {
 
-  class OptimizeMode extends \DrSlump\Protobuf\Enum {
+  class OptimizeMode extends \Simplesurance\Protobuf\Enum {
     const SPEED = 1;
     const CODE_SIZE = 2;
     const LITE_RUNTIME = 3;
@@ -2435,7 +2435,7 @@ namespace google\protobuf\FileOptions {
 }
 namespace google\protobuf {
 
-  class FileOptions extends \DrSlump\Protobuf\Message {
+  class FileOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $java_package = null;
@@ -2470,85 +2470,85 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileOptions');
 
       // OPTIONAL STRING java_package = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "java_package";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING java_outer_classname = 8
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 8;
       $f->name      = "java_outer_classname";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_multiple_files = 10
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 10;
       $f->name      = "java_multiple_files";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_generate_equals_and_hash = 20
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 20;
       $f->name      = "java_generate_equals_and_hash";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL ENUM optimize_for = 9
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 9;
       $f->name      = "optimize_for";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FileOptions\OptimizeMode';
       $f->default   = \google\protobuf\FileOptions\OptimizeMode::SPEED;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL cc_generic_services = 16
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 16;
       $f->name      = "cc_generic_services";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_generic_services = 17
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 17;
       $f->name      = "java_generic_services";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL py_generic_services = 18
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 18;
       $f->name      = "py_generic_services";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -2916,7 +2916,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MessageOptions extends \DrSlump\Protobuf\Message {
+  class MessageOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var boolean */
     public $message_set_wire_format = true;
@@ -2933,32 +2933,32 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MessageOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MessageOptions');
 
       // OPTIONAL BOOL message_set_wire_format = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "message_set_wire_format";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL no_standard_descriptor_accessor = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "no_standard_descriptor_accessor";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3104,7 +3104,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FieldOptions {
 
-  class CType extends \DrSlump\Protobuf\Enum {
+  class CType extends \Simplesurance\Protobuf\Enum {
     const STRING = 0;
     const CORD = 1;
     const STRING_PIECE = 2;
@@ -3112,7 +3112,7 @@ namespace google\protobuf\FieldOptions {
 }
 namespace google\protobuf {
 
-  class FieldOptions extends \DrSlump\Protobuf\Message {
+  class FieldOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var int - \google\protobuf\FieldOptions\CType */
     public $ctype = \google\protobuf\FieldOptions\CType::STRING;
@@ -3135,49 +3135,49 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldOptions');
 
       // OPTIONAL ENUM ctype = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "ctype";
-      $f->type      = \DrSlump\Protobuf::TYPE_ENUM;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_ENUM;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldOptions\CType';
       $f->default   = \google\protobuf\FieldOptions\CType::STRING;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL packed = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "packed";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL deprecated = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "deprecated";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $f->default   = false;
       $descriptor->addField($f);
 
       // OPTIONAL STRING experimental_map_key = 9
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 9;
       $f->name      = "experimental_map_key";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3397,7 +3397,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumOptions extends \DrSlump\Protobuf\Message {
+  class EnumOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[]  */
     public $uninterpreted_option = array();
@@ -3408,14 +3408,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3487,7 +3487,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumValueOptions extends \DrSlump\Protobuf\Message {
+  class EnumValueOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[]  */
     public $uninterpreted_option = array();
@@ -3498,14 +3498,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3577,7 +3577,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class ServiceOptions extends \DrSlump\Protobuf\Message {
+  class ServiceOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[]  */
     public $uninterpreted_option = array();
@@ -3588,14 +3588,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3667,7 +3667,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MethodOptions extends \DrSlump\Protobuf\Message {
+  class MethodOptions extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[]  */
     public $uninterpreted_option = array();
@@ -3678,14 +3678,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodOptions');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 999;
       $f->name      = "uninterpreted_option";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3757,7 +3757,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\UninterpretedOption {
 
-  class NamePart extends \DrSlump\Protobuf\Message {
+  class NamePart extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $name_part = null;
@@ -3771,22 +3771,22 @@ namespace google\protobuf\UninterpretedOption {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption.NamePart');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption.NamePart');
 
       // REQUIRED STRING name_part = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "name_part";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_REQUIRED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED BOOL is_extension = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "is_extension";
-      $f->type      = \DrSlump\Protobuf::TYPE_BOOL;
-      $f->rule      = \DrSlump\Protobuf::RULE_REQUIRED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BOOL;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -3874,7 +3874,7 @@ namespace google\protobuf\UninterpretedOption {
 
 namespace google\protobuf {
 
-  class UninterpretedOption extends \DrSlump\Protobuf\Message {
+  class UninterpretedOption extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption\NamePart[]  */
     public $name = array();
@@ -3903,63 +3903,63 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption');
 
       // REPEATED MESSAGE name = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "name";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption\NamePart';
       $descriptor->addField($f);
 
       // OPTIONAL STRING identifier_value = 3
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 3;
       $f->name      = "identifier_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL UINT64 positive_int_value = 4
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 4;
       $f->name      = "positive_int_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_UINT64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_UINT64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT64 negative_int_value = 5
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 5;
       $f->name      = "negative_int_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT64;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT64;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL DOUBLE double_value = 6
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 6;
       $f->name      = "double_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_DOUBLE;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_DOUBLE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BYTES string_value = 7
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 7;
       $f->name      = "string_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_BYTES;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_BYTES;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING aggregate_value = 8
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 8;
       $f->name      = "aggregate_value";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -4252,7 +4252,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\SourceCodeInfo {
 
-  class Location extends \DrSlump\Protobuf\Message {
+  class Location extends \Simplesurance\Protobuf\Message {
 
     /**  @var int[]  */
     public $path = array();
@@ -4266,22 +4266,22 @@ namespace google\protobuf\SourceCodeInfo {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo.Location');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo.Location');
 
       // REPEATED INT32 path = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "path";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED INT32 span = 2
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 2;
       $f->name      = "span";
-      $f->type      = \DrSlump\Protobuf::TYPE_INT32;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_INT32;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -4409,7 +4409,7 @@ namespace google\protobuf\SourceCodeInfo {
 
 namespace google\protobuf {
 
-  class SourceCodeInfo extends \DrSlump\Protobuf\Message {
+  class SourceCodeInfo extends \Simplesurance\Protobuf\Message {
 
     /**  @var \google\protobuf\SourceCodeInfo\Location[]  */
     public $location = array();
@@ -4420,14 +4420,14 @@ namespace google\protobuf {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo');
 
       // REPEATED MESSAGE location = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "location";
-      $f->type      = \DrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule      = \DrSlump\Protobuf::RULE_REPEATED;
+      $f->type      = \Simplesurance\Protobuf::TYPE_MESSAGE;
+      $f->rule      = \Simplesurance\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\SourceCodeInfo\Location';
       $descriptor->addField($f);
 

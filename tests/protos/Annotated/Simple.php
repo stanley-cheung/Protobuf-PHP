@@ -2,7 +2,7 @@
 
 namespace Tests\Annotated;
 
-class Simple extends \DrSlump\Protobuf\AnnotatedMessage
+class Simple extends \Simplesurance\Protobuf\AnnotatedMessage
 {
     /** @protobuf(tag=1, type=string, required) */
     public $foo;

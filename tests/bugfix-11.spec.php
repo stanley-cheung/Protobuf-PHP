@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../library/DrSlump/Protobuf.php';
+require_once __DIR__ . '/../library/Simplesurance/Protobuf.php';
 
 error_reporting(E_ALL);
 
-use \DrSlump\Protobuf;
+use \Simplesurance\Protobuf;
 
 Protobuf::autoload();
 

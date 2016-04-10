@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../library/DrSlump/Protobuf.php';
+require_once __DIR__ . '/../library/Simplesurance/Protobuf.php';
 
-use \DrSlump\Protobuf;
+use \Simplesurance\Protobuf;
 
 Protobuf::autoload();
 
@@ -81,7 +81,7 @@ describe "JSON Codec"
             $person = new Tests\Person();
             $person->name = 'Iván Montes';
             $person->id = 23;
-            $person->email = 'drslump@pollinimini.net';
+            $person->email = 'Simplesurance@pollinimini.net';
             $phone = new Tests\Person\PhoneNumber;
             $phone->number = '3493123123';
             $phone->type = Tests\Person\PhoneType::WORK;
@@ -104,7 +104,7 @@ describe "JSON Codec"
                     {
                         "name":"Iv\u00e1n Montes",
                         "id":23,
-                        "email":"drslump@pollinimini.net",
+                        "email":"Simplesurance@pollinimini.net",
                         "phone":[{"number":"3493123123","type":2}]
                     }
                 ]
@@ -194,7 +194,7 @@ describe "JSON Codec"
                     {
                         "name":"Iv\u00e1n Montes",
                         "id":23,
-                        "email":"drslump@pollinimini.net",
+                        "email":"Simplesurance@pollinimini.net",
                         "phone":[{"number":"3493123123","type":2}]
                     }
                 ]

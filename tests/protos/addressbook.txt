@@ -14,7 +14,7 @@ person {
 person {
   name: "Iván Montes"
   id: 23
-  email: "drslump@pollinimini.net"
+  email: "Simplesurance@pollinimini.net"
   phone {
     number: "3493123123"
     type: WORK

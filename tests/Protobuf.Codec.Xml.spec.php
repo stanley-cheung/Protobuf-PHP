@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../library/DrSlump/Protobuf.php';
+require_once __DIR__ . '/../library/Simplesurance/Protobuf.php';
 
-use \DrSlump\Protobuf;
+use \Simplesurance\Protobuf;
 
 Protobuf::autoload();
 
@@ -87,7 +87,7 @@ describe "XML Codec"
             $person = new Tests\Person();
             $person->name = 'Iván Montes';
             $person->id = 23;
-            $person->email = 'drslump@pollinimini.net';
+            $person->email = 'Simplesurance@pollinimini.net';
             $phone = new Tests\Person\PhoneNumber;
             $phone->number = '3493123123';
             $phone->type = Tests\Person\PhoneType::WORK;
@@ -161,7 +161,7 @@ describe "XML Codec"
             $p = $xml->addChild('person');
                 $p->addChild('name', 'Iván Montes');
                 $p->addChild('id', 23);
-                $p->addChild('email', 'drslump@pollinimini.net');
+                $p->addChild('email', 'Simplesurance@pollinimini.net');
                 $p = $p->addChild('phone');
                     $p->addChild('number', '3493123123');
                     $p->addChild('type', 2);

@@ -5,7 +5,7 @@
 
 namespace tests {
 
-  class ExtA extends \DrSlump\Protobuf\Message {
+  class ExtA extends \Simplesurance\Protobuf\Message {
 
     /**  @var string */
     public $first = null;
@@ -16,14 +16,14 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.ExtA');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.ExtA');
 
       // OPTIONAL STRING first = 1
-      $f = new \DrSlump\Protobuf\Field();
+      $f = new \Simplesurance\Protobuf\Field();
       $f->number    = 1;
       $f->name      = "first";
-      $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-      $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+      $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -74,7 +74,7 @@ namespace tests {
 
 namespace tests {
 
-  class ExtB extends \DrSlump\Protobuf\Message {
+  class ExtB extends \Simplesurance\Protobuf\Message {
 
 
     /** @var \Closure[] */
@@ -82,7 +82,7 @@ namespace tests {
 
     public static function descriptor()
     {
-      $descriptor = new \DrSlump\Protobuf\Descriptor(__CLASS__, 'tests.ExtB');
+      $descriptor = new \Simplesurance\Protobuf\Descriptor(__CLASS__, 'tests.ExtB');
 
       foreach (self::$__extensions as $cb) {
         $descriptor->addField($cb(), true);
@@ -96,11 +96,11 @@ namespace tests {
 namespace {
   \tests\ExtA::extension(function(){
       // OPTIONAL STRING tests\ExtB\second = 2
-    $f = new \DrSlump\Protobuf\Field();
+    $f = new \Simplesurance\Protobuf\Field();
     $f->number    = 2;
     $f->name      = "tests\ExtB\second";
-    $f->type      = \DrSlump\Protobuf::TYPE_STRING;
-    $f->rule      = \DrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type      = \Simplesurance\Protobuf::TYPE_STRING;
+    $f->rule      = \Simplesurance\Protobuf::RULE_OPTIONAL;
     return $f;
   });
 }

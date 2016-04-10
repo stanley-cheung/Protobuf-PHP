@@ -2,7 +2,7 @@
 
 namespace Tests\Annotated;
 
-class Repeated extends \DrSlump\Protobuf\AnnotatedMessage
+class Repeated extends \Simplesurance\Protobuf\AnnotatedMessage
 {
     /** @protobuf(tag=1, type=string, repeated) */
     public $string;
@@ -12,7 +12,7 @@ class Repeated extends \DrSlump\Protobuf\AnnotatedMessage
     public $nested;
 }
 
-class RepeatedNested extends \DrSlump\Protobuf\AnnotatedMessage
+class RepeatedNested extends \Simplesurance\Protobuf\AnnotatedMessage
 {
     /** @protobuf(tag=1, type=int32) */
     public $id;

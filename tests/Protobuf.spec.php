@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../library/DrSlump/Protobuf.php';
+require_once __DIR__ . '/../library/Simplesurance/Protobuf.php';
 
-use DrSlump\Protobuf;
+use Simplesurance\Protobuf;
 
 describe 'Protobuf'
 
@@ -17,7 +17,7 @@ describe 'Protobuf'
     describe 'codecs registry'
         it 'should get a default codec if none set'
             $codec = Protobuf::getCodec();
-            $codec should be an instance of '\DrSlump\Protobuf\CodecInterface';
+            $codec should be an instance of '\Simplesurance\Protobuf\CodecInterface';
         end.
 
         it 'should return the passed codec instance'
@@ -39,7 +39,7 @@ describe 'Protobuf'
             Protobuf::getCodec() should be $setted
         end.
 
-        # throws DrSlump\Protobuf\Exception
+        # throws Simplesurance\Protobuf\Exception
         it. 'should unregister a codec'
             $setted = new Protobuf\Codec\Binary();
             Protobuf::registerCodec('test', $setted);
@@ -54,7 +54,7 @@ describe 'Protobuf'
             $result should be true;
             // Ensure a new default is given
             $getted = Protobuf::getCodec();
-            $getted should be instanceof 'DrSlump\Protobuf\Codec\Binary'
+            $getted should be instanceof 'Simplesurance\Protobuf\Codec\Binary'
         end.
     end;
 end;

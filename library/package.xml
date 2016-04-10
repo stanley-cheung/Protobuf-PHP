@@ -12,9 +12,9 @@ PHP language, supporting its binary data serialization and including a
 protoc plugin to generate PHP classes from .proto files.
  </description>
  <lead>
-  <name>Iván -DrSlump- Montes</name>
-  <user>drslump</user>
-  <email>drslump@pollinimini.net</email>
+  <name>Iván -Simplesurance- Montes</name>
+  <user>Simplesurance</user>
+  <email>Simplesurance@pollinimini.net</email>
   <active>yes</active>
  </lead>
  <date>2016-03-24</date>
@@ -28,7 +28,7 @@ protoc plugin to generate PHP classes from .proto files.
   <api>beta</api>
  </stability>
  <license uri="http://creativecommons.org/licenses/MIT">The MIT License</license>
- <notes>http://github.com/drslump/Protobuf-PHP</notes>
+ <notes>http://github.com/Simplesurance/Protobuf-PHP</notes>
  <contents>
      <dir name="/">
          <file baseinstalldir="/" name="protoc-gen-php.php" role="script">
@@ -41,109 +41,109 @@ protoc plugin to generate PHP classes from .proto files.
              <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
              <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf.php" role="php">
+         <file name="Simplesurance/Protobuf.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Binary/Reader.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Binary/Reader.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Binary/Unknown.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Binary/Unknown.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Binary/Writer.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Binary/Writer.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/PhpArray/Unknown.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/PhpArray/Unknown.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Binary.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Binary.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Json.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Json.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/JsonIndexed.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/JsonIndexed.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/JsonTagMap.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/JsonTagMap.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/PhpArray.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/PhpArray.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/TextFormat.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/TextFormat.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Codec/Xml.php" role="php">
+         <file name="Simplesurance/Protobuf/Codec/Xml.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/descriptor.pb.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/descriptor.pb.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/descriptor.proto" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/descriptor.proto" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/json.pb.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/json.pb.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/json.proto" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/json.proto" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/php.pb.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/php.pb.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/php.proto" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/php.proto" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/plugin.pb.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/plugin.pb.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/protos/plugin.proto" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/protos/plugin.proto" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/AbstractGenerator.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/AbstractGenerator.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/Cli.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/Cli.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/CommentsParser.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/CommentsParser.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/JsonGenerator.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/JsonGenerator.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Compiler/PhpGenerator.php" role="php">
+         <file name="Simplesurance/Protobuf/Compiler/PhpGenerator.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/AnnotatedMessage.php" role="php">
+         <file name="Simplesurance/Protobuf/AnnotatedMessage.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/CodecInterface.php" role="php">
+         <file name="Simplesurance/Protobuf/CodecInterface.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Descriptor.php" role="php">
+         <file name="Simplesurance/Protobuf/Descriptor.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Enum.php" role="php">
+         <file name="Simplesurance/Protobuf/Enum.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Exception.php" role="php">
+         <file name="Simplesurance/Protobuf/Exception.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Field.php" role="php">
+         <file name="Simplesurance/Protobuf/Field.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Message.php" role="php">
+         <file name="Simplesurance/Protobuf/Message.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Registry.php" role="php">
+         <file name="Simplesurance/Protobuf/Registry.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
-         <file name="DrSlump/Protobuf/Unknown.php" role="php">
+         <file name="Simplesurance/Protobuf/Unknown.php" role="php">
             <tasks:replace from="@package_version@" to="version" type="package-info" />
          </file>
     </dir>
