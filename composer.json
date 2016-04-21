@@ -1,5 +1,5 @@
 {
-    "name": "simplesurance/protobuf-php",
+    "name": "datto/protobuf-php",
     "description": "PHP implementation of Google's Protocol Buffers",
     "keywords": ["protobuf", "protocol buffer", "serializing"],
     "homepage": "https://github.com/simplesurance/Protobuf-PHP",
@@ -7,7 +7,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Iván -Simplesurance- Montes",
+            "name": "Iván Montes",
             "email": "drslump@pollinimini.net",
             "homepage": "https://github.com/Simplesurance/Protobuf-PHP"
         },
