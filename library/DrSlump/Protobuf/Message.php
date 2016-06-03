@@ -172,18 +172,24 @@ abstract class Message implements \ArrayAccess
 
         if (!$f->isExtension()) {
 
-            return $idx !== NULL
+            $value = $idx !== NULL
                    ? $this->{$name}[$idx]
                    : $this->$name;
 
         } else {
 
-            return $idx !== NULL
+            $value = $idx !== NULL
                    ? $this->_extensions[$name][$idx]
                    : $this->_extensions[$name];
 
         }
 
+        //Enum default value is zero on version 3
+        if ($value === NULL && $f->getType() === Protobuf::TYPE_ENUM) {
+            $value = 0;
+        }
+
+        return $value;
     }
 
     /**
