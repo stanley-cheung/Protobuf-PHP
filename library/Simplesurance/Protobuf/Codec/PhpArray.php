@@ -49,7 +49,7 @@ class PhpArray implements Protobuf\CodecInterface
     {
         $descriptor = Protobuf::getRegistry()->getDescriptor($message);
 
-        $data = array();
+        $data = null;
         foreach ($descriptor->getFields() as $tag=>$field) {
 
             $empty = !$message->_has($tag);
@@ -65,6 +65,10 @@ class PhpArray implements Protobuf\CodecInterface
 
             $key = $this->useTagNumber ? $field->getNumber() : $field->getName();
             $v = $message->_get($tag);
+
+            if (empty($v)) {
+                continue;
+            }
 
             if ($field->isRepeated()) {
                 // Make sure the value is an array of values
@@ -128,6 +132,8 @@ class PhpArray implements Protobuf\CodecInterface
                 // Tell apart encoding and decoding
                 if ($value instanceof Protobuf\Message) {
                     return $this->encodeMessage($value);
+                } else if (is_string($value)) {
+                    return $value;
                 } else {
                     $nested = $field->getReference();
                     return $this->decodeMessage(new $nested, $value);
