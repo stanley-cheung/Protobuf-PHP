@@ -66,10 +66,6 @@ class PhpArray implements Protobuf\CodecInterface
             $key = $this->useTagNumber ? $field->getNumber() : $field->getName();
             $v = $message->_get($tag);
 
-            if (empty($v)) {
-                continue;
-            }
-
             if ($field->isRepeated()) {
                 // Make sure the value is an array of values
                 $v = is_array($v) ? $v : array($v);
