@@ -14,10 +14,14 @@
     ],
     "bin": ["protoc-gen-php.bat", "protoc-gen-php.php"],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "pear/console_commandline": "^1.2"
     },
     "autoload": {
-        "psr-0": {"DrSlump": "library/"}
+        "psr-0": {"DrSlump": "library/"},
+        "classmap": [
+            "./library/DrSlump/Protobuf/Compiler/protos"
+        ]
     },
     "extra": {
         "branch-alias": {
