@@ -1,3 +1,8 @@
+[Update 2016-02-08: The official Google protobuf implementation has included
+PHP since version 3.1.0+. gRPC has switched to use that Proto3 implementation
+since version v1.1.0+. This fork will no longer be maintained.]
+
+
 Protobuf for PHP
 ================
 
