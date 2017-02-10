@@ -448,7 +448,7 @@ class PhpGenerator extends AbstractGenerator
         $s[]= '     */';
         $server_stream = $method->getServerStreaming();
         $client_stream = $method->getClientStreaming();
-        $service_fqn = $ns . '.' . $service->getName();
+        $service_fqn = ($ns ? $ns . '.' : '') . $service->getName();
         if($client_stream){
           if($server_stream){
             $s[]= '    public function ' . $method->getName() . '($metadata = array(), $options = array()) {';
