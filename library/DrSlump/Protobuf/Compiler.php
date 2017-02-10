@@ -2,12 +2,6 @@
 
 namespace DrSlump\Protobuf;
 
-// Load descriptor messages
-require_once __DIR__ . '/Compiler/protos/descriptor.pb.php';
-require_once __DIR__ . '/Compiler/protos/plugin.pb.php';
-require_once __DIR__ . '/Compiler/protos/php.pb.php';
-require_once __DIR__ . '/Compiler/protos/json.pb.php';
-
 use DrSlump\Protobuf;
 use google\protobuf as proto;
 

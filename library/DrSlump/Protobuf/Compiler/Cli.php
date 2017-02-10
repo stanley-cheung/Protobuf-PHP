@@ -2,8 +2,6 @@
 
 namespace DrSlump\Protobuf\Compiler;
 
-require_once 'Console/CommandLine.php';
-
 use DrSlump\Protobuf;
 
 class Cli
