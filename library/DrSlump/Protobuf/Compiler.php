@@ -160,6 +160,8 @@ class Compiler
         // Setup response object
         $resp = new \google\protobuf\compiler\CodeGeneratorResponse();
 
+        $doPsr4Namespace = isset($this->options['psr4']) && (int)$this->options['psr4'] === 1;
+
         // First iterate over all the protos to get a map of namespaces
         $this->packages = array();
         foreach($req->getProtoFileList() as $proto) {
@@ -168,7 +170,21 @@ class Compiler
             if (isset($this->packages[$package]) && $namespace !== $this->packages[$package]) {
                 $this->warning("Package $package was already mapped to {$this->packages[$package]} but has now been overridden to $namespace");
             }
-            $this->packages[$package] = $namespace;
+
+            if ($doPsr4Namespace) {
+                /*
+                 * Concatenate the base namespace with the class namespace,
+                 * then convert each leading namespace segment character to
+                 * upper-case.
+                 */
+                $components = explode('\\', $namespace);
+                $components = array_merge($components, explode('.', $package));
+                $components = array_map('ucwords', $components);
+                $this->packages[$package] = implode('\\', $components);
+            } else {
+                $this->packages[$package] = $namespace;
+            }
+
             $this->notice("Mapping $package to $namespace");
         }
 
